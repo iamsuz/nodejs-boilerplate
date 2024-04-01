@@ -1,0 +1,12 @@
+node_modules/
+testing/
+secret.yaml
+.env*
+!.env.example
+ca-certificate.crt
+.DS_Store
+.dccache
+# This is postgresdb folder mapped to docker volume, By default its not present, if needed can be added by updating the docker-compose file
+postgresdb 
+coverage/
+.nyc_output/
