@@ -8,5 +8,13 @@
 	"keywords": [],
 	"author": "Sujit M",
 	"license": "ISC",
-	"description": ""
+	"description": "",
+	"dependencies": {
+		"body-parser": "^1.20.3",
+		"cookie-parser": "^1.4.7",
+		"express": "^4.21.2",
+		"express-fileupload": "^1.5.1",
+		"morgan": "^1.10.0",
+		"nunjucks": "^3.2.4"
+	}
 }
