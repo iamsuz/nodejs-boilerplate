@@ -1,11 +1,16 @@
-FROM node:22.13.1-alpine
+FROM node:22.13.1-alpine as debug
 
 WORKDIR /app
 
 COPY package.json .
 
 
-RUN npm install 
+#get the mode of the app
+ARG NODE_ENV
+RUN if [ "$NODE_ENV" = "development" ]; \
+        then npm install; \
+        else npm install --only=production; \
+        fi
 
 
 COPY . ./
