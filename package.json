@@ -6,8 +6,11 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node ./src/bin/www"
 	},
-	"keywords": [],
-	"author": "Sujit M",
+	"keywords": [
+		"node",
+		"rnm"
+	],
+	"author": "@rnm/Sujit M",
 	"license": "ISC",
 	"description": "",
 	"dependencies": {
