@@ -1,5 +1,4 @@
 let express = require("express");
-let path = require("path");
 let logger = require("morgan");
 let cookieParser = require("cookie-parser");
 let bodyParser = require("body-parser");
@@ -10,7 +9,7 @@ let router = require("./routes/index");
 
 let app = express();
 
-app.get("/healthz", function (req, res) {
+app.get("/health", function (req, res) {
 	console.log("This is a healthz check");
 	res.status(200).json({ message: "OK", uptime: process.uptime() });
 });
@@ -40,7 +39,7 @@ nunjucks.configure("views", {
 });
 
 app.use(require("./utils/headers"));
-app.use(require("./utils/analytics"));
+// app.use(require("./utils/analytics"));
 
 app.get("/", function (req, res) {
 	console.log("Welcome to the app");
