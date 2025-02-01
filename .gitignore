@@ -10,3 +10,4 @@ ca-certificate.crt
 postgresdb 
 coverage/
 .nyc_output/
+package-lock.json
